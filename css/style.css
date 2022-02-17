@@ -1,3 +1,14 @@
 .bg-color{
-    background-color: lightcyan;
+    background-color: ghostwhite;
+}
+.input-body{
+    background-color: #DCDCDC;
+    width: 90%;
+    margin: 0 auto;
+}
+.input-saving{
+    background-color: #DCDCDC;
+    border: none;
+    border-radius: 5px;
+    width: 5rem;
 }
