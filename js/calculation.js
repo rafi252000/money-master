@@ -40,3 +40,22 @@ document.getElementById('cal-btn').addEventListener('click',function(){
  
 
 // Saving calculate Button
+document.getElementById("save-btn").addEventListener("click",function(){
+    const income =inputValue("income");
+    const remaining =document.getElementById("balance").innerText;
+    const save= inputValue("save");
+    if(save<=100){
+        const totalSaving=(income*save)/100;
+        if(totalSaving<parseFloat(remaining)){
+            const remaingBalance=parseFloat(remaining)- totalSaving;
+            document.getElementById("remaingAmount").innerText=remaingBalance;
+        }
+        else{
+            alert("Your remaining balance is less then the amount you want save.");
+        }
+
+    }
+    else{
+        alert("Select the pereentage between 0 to 100");
+    }
+});
