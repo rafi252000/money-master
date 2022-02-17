@@ -4,7 +4,7 @@ function inputValue(inputId){
     const inputAmount= parseFloat(input.value);
     console.log(inputAmount)
     if(isNaN(inputAmount) || inputAmount< 0){
-        return alert("Use Positive value");
+        return alert("You can't input negative amount of money");
     }
     else{
         return inputAmount;
@@ -21,7 +21,7 @@ document.getElementById('cal-btn').addEventListener('click',function(){
     const clothes=inputValue("clothes");
 
     if (isNaN(income) || isNaN(food) || isNaN(rent) || isNaN(clothes)) {
-        alert("Use Positive value")
+        alert("You can't input negative amount of money")
     }
     else{
         
@@ -32,7 +32,7 @@ document.getElementById('cal-btn').addEventListener('click',function(){
             document.getElementById("balance").innerText=balance;
         }
         else{
-            alert("Sorry Total Expenses is bigger than your ")
+            alert("Sorry!! Not enough balance for saving")
         }
     }
  
