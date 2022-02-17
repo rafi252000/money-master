@@ -48,7 +48,8 @@ document.getElementById("save-btn").addEventListener("click",function(){
         const totalSaving=(income*save)/100;
         if(totalSaving<parseFloat(remaining)){
             const remaingBalance=parseFloat(remaining)- totalSaving;
-            document.getElementById("remaingAmount").innerText=remaingBalance;
+            document.getElementById("savingAmount").innerText=totalSaving;
+            document.getElementById("remaningAmount").innerText=remaingBalance;
         }
         else{
             alert("Your remaining balance is less then the amount you want save.");
